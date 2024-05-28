@@ -1,11 +1,23 @@
 import {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-import styles from './Login.css'
-
+import styles from './Login.module.css'
+import { ToastContainer, toast } from 'react-toastify';
+import { loginAdmin } from '../../api/api';
+import 'react-toastify/dist/ReactToastify.css'
 
 
 function Login() {
-
+const navigate=useNavigate();
+const notify = () => {
+  toast.success("logged in successfully !", {
+    position: "top-center"
+  });
+}
+const notify2 = () => {
+  toast.error("Invalid Credentials !", {
+    position: "top-right"
+  });
+}
   
   const [formData, setFormData] = useState({ 
       email: "",
@@ -30,6 +42,18 @@ function Login() {
       if(!flag){
         return;
       }
+      const result = await loginAdmin(formData);
+      if(result){
+        console.log(result);
+        notify();
+        setTimeout(() => {
+          navigate('/dashboard');
+        }, 1500);
+        return;
+      }
+      notify2()
+      return;
+      
 
   };
     

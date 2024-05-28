@@ -1,0 +1,30 @@
+.quizCard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .quizInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .quizInfo span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .quizInfo span:last-child {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .quizInfo span:last-child::before {
+    content: "\1F441"; /* Unicode for eye emoji */
+    margin-right: 5px;
+  }
+  

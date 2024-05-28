@@ -1,0 +1,172 @@
+.main {
+    margin: auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  .modalOverlay1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quizContainer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .questionNav {
+    margin-bottom: 20px;
+  }
+  
+  .questionNumber {
+    display: flex;
+    align-items: center;
+  }
+  
+  .questionItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .questionCircle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .active {
+    background-color: #28a745;
+  }
+  
+  .closeButton {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #dc3545;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  .quizType {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .optionType {
+    margin-bottom: 20px;
+  }
+  
+  .radioButtons {
+    display: flex;
+  }
+  
+  .radioButtons div {
+    margin-right: 20px;
+  }
+  
+  .optionsContainer {
+    margin-bottom: 20px;
+  }
+  
+  .optionsParent {
+    margin-bottom: 10px;
+  }
+  
+  .options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .option {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .deleteIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .timer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .timerValue {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .clicked {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .addOption {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .cancelButton,
+  .createButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .cancelButton {
+    background-color: #dc3545;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .createButton {
+    background-color: #28a745;
+    color: #fff;
+  }
+  

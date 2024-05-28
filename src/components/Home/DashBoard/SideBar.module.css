@@ -1,0 +1,50 @@
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover,
+  .button.active {
+    background-color: #555;
+  }
+  
+  .logout {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #ff3333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .logout:hover {
+    background-color: #ff6666;
+  }
+  
